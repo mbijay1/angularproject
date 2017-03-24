@@ -1,0 +1,20 @@
+<div layout="column">
+    <div layout="row" class="header">
+        <div flex="15">Name</div>
+        <div flex="15">Address</div>
+        <div flex="15">DOB</div>
+        <div flex="15">Phone</div>
+        <div flex="15">Email</div>
+        <div flex="15">Git</div>
+        <div flex="15">Gender</div>
+    </div>
+    <div layout="row" ng-repeat="stu in studentList track by $index" >
+        <div flex="15">{{stu.firstName}} {{stu.lastName}}</div>
+        <div flex="15">{{stu.address}}</div>
+        <div flex="15">{{stu.dob|date:shortDate}}</div>
+        <div flex="15">{{stu.phone}}</div>
+        <div flex="15">{{stu.email}}</div>
+        <div flex="15">{{stu.git}}</div>
+        <div flex="15">{{stu.gender}}</div>
+    </div>  
+</div>

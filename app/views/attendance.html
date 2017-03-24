@@ -1,0 +1,38 @@
+<div layout="column" ng-controller="checkboxCtrl">
+    <h3 class="header">Student Attendance </h3>
+    <div layout="row" class="tbl-head">
+        
+        
+            
+        <div flex="30"><b>Name</b></div>        
+        <div flex="30"><md-datepicker ng-model="date"></md-datepicker></div>
+
+    
+<!--            <div flex="30"><b>Date : {{date|date:shortDate}}</b></div>-->
+    </div>
+    <div layout="row" ng-repeat="stu in students track by $index">
+        <div flex="45">{{stu.name}}</div>
+        <div flex="15">
+            <md-checkbox ng-model="presentStudents" aria-label="a" ng-click="toggleStudents(stu)"></md-checkbox> 
+        </div>
+    </div> 
+<!-- ng-checked="isChecked(stu)"    -->
+
+    <div flex="25">
+        <md-button class="md-raised md-primary" ng-click="test()">Submit</md-button>
+        <div ng-show="show=='1'">
+            The students present in the {{date|date:shortDate}} are <br>
+            <div ng-repeat="selected in presentStudents track by $index">
+            <div>{{selected.name}}</div>
+        </div>
+    </div>
+    
+
+
+</div>
+
+
+
+
+
+

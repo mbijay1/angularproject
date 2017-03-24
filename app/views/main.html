@@ -1,0 +1,11 @@
+    <body>
+        <md-button ng-click="updateId(2)" class="md-raised md-primary" >Student Form</md-button>
+        <md-button ng-click="updateId(3)" class="md-raised md-primary" >Student List</md-button>
+        <md-button ng-click="updateId(4)" class="md-raised md-primary" >Attendance</md-button>
+        <md-button ng-click="updateId(6)" class="md-raised md-primary" >Report</md-button>
+        <md-button ng-click="updateId(5)" class="md-raised md-primary" >Logout</md-button>
+        <form-directive ng-if="id==2"></form-directive>
+        <student-directive ng-if="id==3"></student-directive>
+        <attendance-directive ng-if="id==4"></attendance-directive>
+        <report-directive ng-if="id==6"></report-directive>
+    </body>

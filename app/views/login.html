@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+    </head>
+    <body ng-app="app">
+        <div class="header">Login Page</div>
+        <form >
+            <div>
+                <md-input-container>
+                    <input type="text" placeholder="Enter the Username" ng-model="loginModel.username">
+                </md-input-container>  
+            </div>
+            <div>
+                <md-input-container>
+                    <input type="text" placeholder="Enter Password" ng-model="loginModel.password">
+                </md-input-container>
+            </div>
+            <div>
+                <md-button ng-click="login()" class="md-raised md-primary" >Login</md-button>
+            </div>
+        </form>
+    </body>
+</html>
+
+
+<!--
+
+        <form>
+            Username : <input type="text" placeholder="Enter Username" ng-model="loginModel.username"><br><br>
+            Password : <input type="password" placeholder="Enter Password" ng-model="loginModel.password"><br><br>
+            <input type="submit" ng-click="login()" value="Login">
+        </form>
+-->

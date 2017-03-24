@@ -1,0 +1,18 @@
+/*
+.header{
+    background: blue;
+    text-align: center;
+    font-size: 25px;
+    text-align: center;
+}*/
+.header{
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    background: yellow;
+    color: blue;
+    font-size: 25px;
+    text-align: center;
+    border:1px solid orange;
+    padding-top: 10px;
+}

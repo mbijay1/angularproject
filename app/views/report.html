@@ -1,0 +1,13 @@
+<div class="header">Report</div>
+<table class="table table-hover" ng-repeat="(xx,yy) in reportArray">
+    <tr>
+        <th>Date</th>
+        <th>Present Students</th>
+    </tr>
+    <tr ng-repeat="(aa,bb) in yy">
+    <div>
+        <td>{{aa|date:shortDate}}</td>
+        <td ng-repeat="pp in bb">{{pp.name}}</td>
+    </div>  
+    </tr>
+</table>
